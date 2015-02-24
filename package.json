@@ -1,0 +1,28 @@
+{
+  "name": "10_single_resource_express_api",
+  "version": "1.0.0",
+  "description": "Assignment #10: Create a Single Resource Express REST API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewheartsxd/single_resource_express_api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewheartsxd/single_resource_express_api/issues"
+  },
+  "homepage": "https://github.com/andrewheartsxd/single_resource_express_api",
+  "dependencies": {
+    "body-parser": "^1.12.0",
+    "express": "^4.11.2",
+    "mongoose": "^3.8.23"
+  },
+  "devDependencies": {
+    "chai": "^2.0.0",
+    "chai-http": "^1.0.0"
+  }
+}
