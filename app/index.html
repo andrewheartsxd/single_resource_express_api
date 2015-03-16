@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body data-ng-app="heroApp">
+  <main data-ng-controller="heroController" data-ng-init="getAll()">
+    <h1>Heroes:</h1>
+    <form name="newHeroName">
+      <label for="newHero">New Hero</label>
+      <input type="text" id="newHero" data-ng-model="newHero.hero">
+      <button type="submit" data-ng-click="create(newHero)">Save New Hero</button>
+    </form>
+    <ul data-ng-repeat="heroe in heroes">
+      <li>
+        {{heroe.hero}}
+        <form data-ng-if="heroe.editing">
+          <label for="heroe{{heroe._id}}">Edit Hero</label>
+          <input type="text" id="heroe{{heroe._id}}" data-ng-model="heroe.hero">
+          <button type="submit" data-ng-click="save(heroe)">Save Changes</button>
+          <button type="button" data-ng-click="editToggle(heroe)">Cancel</button>
+        </form>
+        <button data-ng-click="editToggle(heroe)" data-ng-if="!heroe.editing">Edit Hero</button>
+        <button data-ng-click="remove(heroe)">Delete Hero</button>
+      </li>
+    </ul> 
+  </main>
+  
+  <script src="bundle.js"></script>
+</body>
+</html>
