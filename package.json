@@ -1,0 +1,43 @@
+{
+  "name": "10_single_resource_express_api",
+  "version": "1.0.0",
+  "description": "Assignment #10: Create a Single Resource Express REST API",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/server_side/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewheartsxd/single_resource_express_api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewheartsxd/single_resource_express_api/issues"
+  },
+  "homepage": "https://github.com/andrewheartsxd/single_resource_express_api",
+  "dependencies": {
+    "body-parser": "^1.12.0",
+    "express": "^4.11.2",
+    "mongoose": "^3.8.23"
+  },
+  "devDependencies": {
+    "chai": "^2.0.0",
+    "chai-http": "^1.0.0",
+    "debowerify": "^1.2.0",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.5.0",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-jscs": "^1.5.0",
+    "grunt-karma": "^0.10.1",
+    "grunt-simple-mocha": "^0.4.0",
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "mocha": "^2.1.0"
+  }
+}
